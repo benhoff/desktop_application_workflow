@@ -14,9 +14,11 @@ if __name__ == '__main__':
     list_widget = QtWidgets.QListWidget(parent=main_window)
     simple_list = ['Butter', 'Blue', 'red', 'elephants']
 
+    """
     for item in simple_list:
         list_widget.addItem(item)
-
+    """
+    list_widget.addItems(simple_list)
     main_window.setCentralWidget(list_widget)
     
     
